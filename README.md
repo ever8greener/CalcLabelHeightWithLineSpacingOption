@@ -5,4 +5,4 @@
 1. UILabel 에 line spacing 이 있는 조건
 2. UILabel 의 전체 height 를 구하자고 함.
 
-[Refer to stackoverflow ](http://stackoverflow.com/questions/5494498/how-to-control-the-line-spacing-in-uilabel)
+[Other helpful stackoverflow codes](http://stackoverflow.com/questions/5494498/how-to-control-the-line-spacing-in-uilabel)
