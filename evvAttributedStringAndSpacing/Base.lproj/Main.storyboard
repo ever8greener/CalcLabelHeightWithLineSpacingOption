@@ -1,25 +1,86 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ANp-qH-uvp">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Second View Controller-->
+        <scene sceneID="Tf3-fJ-XsM">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ANp-qH-uvp" customClass="SecondViewController" customModule="evvAttributedStringAndSpacing" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="kcH-Rd-h18"/>
+                        <viewControllerLayoutGuide type="bottom" id="hbK-Aa-rc1"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="U3J-kr-l67">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DWL-Jh-lIp">
+                                <rect key="frame" x="100" y="120" width="100" height="100"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="4Nn-iS-PCh"/>
+                                    <constraint firstAttribute="height" constant="100" id="Av2-JN-iBK"/>
+                                    <constraint firstAttribute="width" constant="100" id="Kie-h9-waD"/>
+                                    <constraint firstAttribute="height" constant="100" id="iU0-qV-Tb2"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Av2-JN-iBK"/>
+                                        <exclude reference="Kie-h9-waD"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2j3-Oh-WGH">
+                                <rect key="frame" x="111" y="245" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="actionUpdate:" destination="ANp-qH-uvp" eventType="touchUpInside" id="uIN-YU-CAJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4o-UM-uNR">
+                                <rect key="frame" x="294" y="245" width="34" height="30"/>
+                                <state key="normal" title="clear"/>
+                                <connections>
+                                    <action selector="clearScreen:" destination="ANp-qH-uvp" eventType="touchUpInside" id="3pj-qR-NkF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sample text i am" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jWy-GT-xgi">
+                                <rect key="frame" x="200" y="120" width="400" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DWL-Jh-lIp" firstAttribute="leading" secondItem="U3J-kr-l67" secondAttribute="leading" constant="100" id="FTb-w0-ujd"/>
+                            <constraint firstAttribute="trailing" secondItem="jWy-GT-xgi" secondAttribute="trailing" id="GQl-7q-vk4"/>
+                            <constraint firstItem="jWy-GT-xgi" firstAttribute="top" secondItem="kcH-Rd-h18" secondAttribute="bottom" constant="100" id="YGj-ZA-bxF"/>
+                            <constraint firstItem="jWy-GT-xgi" firstAttribute="leading" secondItem="DWL-Jh-lIp" secondAttribute="trailing" id="h6C-bJ-yZN"/>
+                            <constraint firstItem="DWL-Jh-lIp" firstAttribute="top" secondItem="kcH-Rd-h18" secondAttribute="bottom" constant="100" id="oSr-Ua-zkm"/>
+                            <constraint firstItem="DWL-Jh-lIp" firstAttribute="top" secondItem="kcH-Rd-h18" secondAttribute="bottom" constant="100" id="pjd-6s-3r1"/>
+                            <constraint firstItem="DWL-Jh-lIp" firstAttribute="leading" secondItem="U3J-kr-l67" secondAttribute="leading" constant="100" id="xQF-cX-6s0"/>
+                            <constraint firstItem="jWy-GT-xgi" firstAttribute="leading" secondItem="DWL-Jh-lIp" secondAttribute="trailing" id="zrp-hb-RvB"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="oSr-Ua-zkm"/>
+                                <exclude reference="xQF-cX-6s0"/>
+                                <exclude reference="zrp-hb-RvB"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="flexibleLabel" destination="jWy-GT-xgi" id="ffl-u4-Hvc"/>
+                        <outlet property="refBlock" destination="DWL-Jh-lIp" id="1eD-ha-DCB"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H3P-wi-WAG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="212" y="597"/>
         </scene>
     </scenes>
 </document>
